@@ -1,0 +1,27 @@
+{
+    "short_name": "CGPA",
+    "name": "CGPA Web App",
+    "icons": [
+      {
+        "src": "/assets/logo-192x192.png",
+        "type": "image/png",
+        "purpose": "any maskable",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/logo-large-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#000000",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": true,
+    "description": "Website for the AoE 2 CGPA community",
+    "dir": "ltr",
+    "lang": "en-US",
+    "theme_color": "#000000"
+  }
