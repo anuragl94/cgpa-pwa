@@ -67,6 +67,10 @@ label[for="nav-toggle"] {
     line-height: 56px;
 }
 
+#hero-banner {
+    width: 100%;
+}
+
 /* desktop design */
 @media screen and (min-width: 1024px) {
     body {

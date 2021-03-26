@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The PWA for CGPA website",
   "main": "/index.html",
+  "homepage": "https://anuragl94.github.io/cgpa-pwa/",
   "dependencies": {},
   "devDependencies": {
     "gh-pages": "^3.1.0",
@@ -11,9 +12,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel watch index.html",
-    "build": "parcel build index.html",
-    "deploy": "npm run build && gh-pages -d dist"
+    "clean": "rm -rf .cache && rm -rf dist",
+    "start": "npm run clean && parcel index.html",
+    "build": "npm run clean && parcel build index.html",
+    "deploy": "npm run build && gh-pages -d dist -t true"
   },
   "author": "Anurag Lingam",
   "license": "ISC"
