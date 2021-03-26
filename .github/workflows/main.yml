@@ -27,29 +27,13 @@ jobs:
       - name: Notify node modules installation
         run: echo Initializing dependencies!
 
-      # Runs a set of commands using the runners shell
-      - name: RRun the deploy script
-        run: |
-          npm install
-          npm run deploy
+      # Deploy master branch to gh-pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
           
           
           
           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          ct.
